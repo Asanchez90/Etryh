@@ -7,7 +7,7 @@ const TEAMS = [
   //   tank: 'Tini pium pium',
   //   tankRio: 'https://raider.io/characters/eu/sanguino/Tinit%C3%B3',
   //   heal: 'Paca la manca',
-  //   healrRio: 'https://raider.io/characters/eu/sanguino/Tinit%C3%B3',
+  //   healRio: 'https://raider.io/characters/eu/sanguino/Tinit%C3%B3',
   //   dps1: 'Random 1',
   //   dps1Rio: 'https://raider.io/characters/eu/zuljin/Finghin',
   //   dps2: 'Random 2',
@@ -86,7 +86,7 @@ const TEAMS = [
     image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682700341/gines_que_empape_v9rgq2.png',
     twitch: 'Galiozx',
     twitchLink:
-      'https://www.twitch.tv/',
+      'https://www.twitch.tv/Herculotex',
   },
  
 ];
@@ -142,8 +142,7 @@ const pintarEquipos = (equipos) => {
     divdps2$$.classList.add('dps2-wrapper');
     divdps3$$.classList.add('dps3-wrapper');
     divtwitch$$.classList.add('twitch-wrapper');
-    // divimg$$.classList.add('img-wrapper');
-    // divimg$$.classList.add('img-wrapper');
+    
 
     team_name$$.textContent = equipo.team_name;
     // tank$$.textContent = equipo.tank;
@@ -228,22 +227,6 @@ const pintarEquipos = (equipos) => {
 pintarEquipos(TEAMS);
 
 // pintar flecha ir arriba
-// function scrollToTop() {
-//   window.scrollTo({
-//     top: 10,
-//     behavior: 'smooth'
-//   });
-// }
-
-
-// window.addEventListener('scroll', function() {
-//   var btnScrollUp = document.getElementById('btn-scroll-up');
-//   if (window.scrollY > 500) {
-//     btnScrollUp.style.display = "block";
-//   } else {
-//     btnScrollUp.style.display = "none";
-//   }
-// });
 
 window.onscroll = function() {scrollFunction()};
 
