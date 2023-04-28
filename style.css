@@ -1,0 +1,446 @@
+@font-face {
+  font-family: 'komika-Title';
+  
+  src: url('./assets/font/Komika-Title/KOMTIT__.ttf') format('truetype');
+  /* src: url("./assets/font/Komika-Title/KOMTITA_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITBR.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITE_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITG_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITK_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITP_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITS_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITT_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITTL.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITW_.ttf") format("truetype");
+  src: url("./assets/font/Komika-Title/KOMTITWR.ttf") format("truetype"); */
+}
+@font-face {
+  font-family: 'cuatra';
+  src: url('./assets/font/cuatra/Cuatra-Bold.ttf') format('truetype');
+}
+
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  /* background-color: transparent; */
+  background-image: url(https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/fondo_1920x1080_feoidk.png);
+  /* background-repeat: repeat-y; */
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* BACKGROUND COLOR */
+  --rc-color-background-primary: var(--rc-color-n-000);
+  --rc-color-background-segundary: var(--rc-color-n-050);
+  --rc-color-background-tertiary: var(--rc-color-n-100);
+  --rc-color-background-quaternary: var(--rc-color-n-500);
+  --rc-color-background-quinary: var(--rc-color-n-500);
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* BRAND COLOR */
+  --rc-color-brand: #010101;
+
+  /* COLOR PALETTE */
+  --rc-color-n-000: #ffffff;
+  --rc-color-n-050: #000000;
+  --rc-color-n-100: #800080;
+  --rc-color-n-300: #808080;
+
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body: var(--rc-color-n-900);
+  --rc-color-typography-note: var(--rc-color-n-300);
+  --rc-color-typography-button: var(--rc-color-n-000);
+  --rc-color-typography-h1: var(--rc-color-n-900);
+  --rc-color-typography-h2: var(--rc-color-n-900);
+  --rc-color-typography-h3: var(--rc-color-n-000);
+  --rc-color-typography-h4: var(--rc-color-n-000);
+
+  /* TYPOGRAPHY TYPE */
+
+  --rc-typography-h1: 2.5rem;
+  --rc-typography-h2: 2.25rem;
+  --rc-typography-h3: 2rem;
+  --rc-typography-h4: 1.75rem;
+  --rc-typography-li: 2.25rem;
+  --rc-typography-s: 2.25rem;
+  --rc-typography-general: 1.5rem;
+  --rc-typography-btn: 1.125rem;
+  --rc-typography-p: 2.25rem;
+  --rc-typography-a: 2.25rem;
+
+  /* BORDER RADIUS */
+  --rc-radius-presentacion: 2rem;
+  --rc-radius-cartaEquipos: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'komika-Title';
+  src: url('./assets/font/Komika-Title/KOMTIT__.ttf') format('truetype');
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: var(--rc-typography-h1);
+}
+
+a {
+  color: white;
+  text-decoration: double;
+  cursor: pointer;
+}
+p,
+li {
+  color: black !important;
+}
+
+.header-img {
+  height: 140px;
+  width: 120px;
+}
+/* ---- back up ---- */
+
+#btn-scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: var(--rc-typography-btn);
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 36px;
+}
+/* ------patrocinadores------- */
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  min-width: 200%;
+  max-height: 100%;
+  animation: cambio 30s linear infinite;
+}
+
+.slider li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  list-style: none;
+  /* padding: 16px; */
+  margin: 36px;
+}
+.slider li a {
+  cursor: pointer;
+}
+
+.slider img {
+  padding: 36px;
+  height: 90%;
+  max-width: 90%;
+}
+.zdrink, .pampling, .streamloots, .saul-lopez, .frankfurt{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+.zdrink, .frankfurt{
+ font-family: 'cuatra';
+ src: url('./assets/font/cuatra/Cuatra-Bold.ttf') format('truetype');
+}
+.zdrink-logo{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes cambio {
+  0%,
+  50% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ---------------------------------------------------------------- */
+.info-general {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(212, 164, 164),
+    rgb(194, 94, 88),
+    rgb(244, 220, 219)
+  );
+  margin: 50px 50px 50px 50px;
+  padding: 50px;
+  overflow-y: scroll;
+  /* box-shadow: inset 0 -3em 3em rgb(245, 208, 202); */
+  border-radius: var(--rc-radius-presentacion);
+  display: flex;
+  font-size: var(--rc-typography-general);
+}
+.info-edy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.article-normas,
+.article-equipo,
+.article-premios {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-normas > h2,
+.article-equipo > h2,
+.article-premios > h2 {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  font-size: 60px;
+}
+
+.info-edy > img {
+  max-width: 350px;
+}
+
+.list-gears,
+.list-addons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+/* ----estilos a en reglas------ */
+.list-gears > a,
+.list-addons > a {
+  text-decoration: double;
+  cursor: pointer;
+}
+
+.team-presentacion {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.img-wrapper {
+  height: 350px;
+  width: 350px;
+}
+
+.img-wrapper img {
+  max-width: 80%;
+  border-radius: 60%;
+}
+
+#equipo-js {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  padding: 50px;
+  overflow-y: scroll;
+}
+
+.equipo {
+  border: 5px solid linear-gradient(to bottom, transparent, grey, red, white);
+  border-radius: 20%;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(212, 164, 164),
+    rgb(194, 94, 88),
+    rgb(244, 220, 219)
+  );
+  padding: 25px;
+}
+
+/* --- rio ---- */
+.tank-wrapper > a,
+.heal-wrapper > a,
+.dps1-wrapper > a,
+.dps2-wrapper > a,
+.dps3-wrapper > a,
+.twitch-wrapper > a {
+  color: #555 !important;
+  text-decoration: double;
+  cursor: pointer;
+  font-size: var(--rc-typography-general);
+}
+.equipo > h3,
+.equipo > h3,
+.equipo > h3,
+.equipo > h3,
+.equipo > h3,
+.equipo > h3 {
+  color: var(--rc-color-n-000);
+  font-size: var(--rc-typography-h2);
+}
+
+.logo-team {
+  max-width: 100px;
+}
+
+/* ----- footer ------ */
+.infoRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+  margin-bottom: auto;
+  background-color: black;
+  padding: 10px;
+}
+
+/* ----- twitter ------ */
+
+.TwitterBtn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: var(--rc-color-typography-button);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(40, 144, 241);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(40, 144, 241);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 2;
+}
+
+.TwitterBtn:hover {
+  color: #fff;
+  border: 1px solid rgb(40, 144, 241);
+  z-index: 3;
+}
+
+.TwitterBtn:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+  
+}
+
+/* ----- instagram, discord, twitch ------ */
+
+.instagramBtn,
+.discordBtn,
+.twitchBtn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: var(--rc-color-typography-button);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #800080;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: purple;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 2;
+}
+
+.instagramBtn span,
+.discordBtn span,
+.twitchBtn span,
+.TwitterBtn span {
+  margin: 10px;
+  color: white;
+  z-index: 2;
+}
+
+.instagramBtn::before,
+.discordBtn::before,
+.twitchBtn::before,
+.TwitterBtn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.instagramBtn:hover,
+.discordBtn:hover,
+.twitchBtn:hover {
+  color: #fff;
+  border: 1px solid purple;
+}
+
+.instagramBtn:hover::before,
+.discordBtn:hover::before,
+.twitchBtn:hover::before {
+  box-shadow: inset 0 0 0 10em purple;
+}
