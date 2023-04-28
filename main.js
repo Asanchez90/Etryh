@@ -52,7 +52,7 @@ const TEAMS = [
     image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/Nyalich_zy3rgt.png',
     twitch: 'Alyssïa',
     twitchLink:
-      'https://www.twitch.tv/',
+    'https://www.twitch.tv/pxdragonair',
   },
   {
     team_name: 'Glory Never Dies',
