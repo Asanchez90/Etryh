@@ -76,7 +76,7 @@ const TEAMS = [
     tank: 'Skarw',
     tankRio: 'https://raider.io/characters/eu/tarren-mill/Skarw',
     heal: 'Beyaquita',
-    healrRio: 'https://raider.io/characters/eu/sanguino/Beyaquita',
+    healRio: 'https://raider.io/characters/eu/sanguino/Beyaquita',
     dps1: 'Daylox',
     dps1Rio: 'https://raider.io/characters/eu/sanguino/Daylox',
     dps2: 'Galiozx',
