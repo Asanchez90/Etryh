@@ -346,7 +346,13 @@ li {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
+  .body{
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+ 
   .header-info {
     display: flex;
     flex-direction: row;
