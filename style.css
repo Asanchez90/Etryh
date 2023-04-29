@@ -345,8 +345,8 @@ li {
   padding: 10px;
 }
 
-
-@media screen and (max-width: 390px) {
+/* -------------------------@media------------------------------- */
+@media screen and (max-width: 450px) {
   .body{
     padding: 0;
     width: fit-content;
