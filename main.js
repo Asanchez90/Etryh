@@ -1,24 +1,22 @@
 const anchor = document.getElementById('myAnchor');
 
 const TEAMS = [
-  
-  // {
-  //   team_name: 'tinititroll',
-  //   tank: 'Tini pium pium',
-  //   tankRio: 'https://raider.io/characters/eu/sanguino/Tinit%C3%B3',
-  //   heal: 'Paca la manca',
-  //   healRio: 'https://raider.io/characters/eu/sanguino/Tinit%C3%B3',
-  //   dps1: 'Random 1',
-  //   dps1Rio: 'https://raider.io/characters/eu/zuljin/Finghin',
-  //   dps2: 'Random 2',
-  //   dps2Rio: 'https://raider.io/characters/eu/zuljin/Finghin',
-  //   dps3: 'Random 3',
-  //   dps3Rio: 'https://raider.io/characters/eu/zuljin/Finghin',
-  //   image: './assets/msi-crosshair-17-i7-12650.png',
-  //   twitch:'tini',
+    // {
+  //   team_name: '',
+  //   tank: '',
+  //   tankRio: '',
+  //   heal: '',
+  //   healRio: '',
+  //   dps1: '',
+  //   dps1Rio: '',
+  //   dps2: '',
+  //   dps2Rio: '',
+  //   dps3: '',
+  //   dps3Rio: '',
+  //   image: '',
+  //   twitch: '',
   //   twitchLink:
-  //     'https://www.youtube.com/watch?v=YBvNXzDCkso&list=RDXfh9mBUg9zs&index=2',
-  
+  //     '',
   // },
   {
     team_name: 'Policía del Deplete',
@@ -84,10 +82,45 @@ const TEAMS = [
     dps3: 'Perfectenemy',
     dps3Rio: 'https://raider.io/characters/eu/dun-modr/Perfectenemy',
     image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682700341/gines_que_empape_v9rgq2.png',
-    twitch: 'Galiozx',
+    twitch: 'Beyaquita',
     twitchLink:
       'https://www.twitch.tv/Herculotex',
   },
+  {
+    team_name: 'Depleted',
+    tank: 'Warliss',
+    tankRio: 'https://raider.io/characters/eu/sanguino/Warliss',
+    heal: 'Ktekazo',
+    healRio: '',
+    dps1: 'Lørbus',
+    dps1Rio: 'https://raider.io/characters/eu/sanguino/L%C3%B8rbus',
+    dps2: 'Sephíroth',
+    dps2Rio: 'https://raider.io/characters/eu/sanguino/Seph%C3%ADroth',
+    dps3: 'Ryöta',
+    dps3Rio: 'https://raider.io/characters/us/zuljin/Ry%C3%B6ta',
+    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682853350/lissmonk_bpclm2.jpg',
+    twitch: 'lissmonk',
+    twitchLink:
+      'https://www.twitch.tv/lissmonk',
+  },
+    // {
+  //   team_name: '',
+  //   tank: '',
+  //   tankRio: '',
+  //   heal: '',
+  //   healRio: '',
+  //   dps1: '',
+  //   dps1Rio: '',
+  //   dps2: '',
+  //   dps2Rio: '',
+  //   dps3: '',
+  //   dps3Rio: '',
+  //   image: '',
+  //   twitch: '',
+  //   twitchLink:
+  //     '',
+  // },
+
  
 ];
 
@@ -146,11 +179,11 @@ const pintarEquipos = (equipos) => {
 
     team_name$$.textContent = equipo.team_name;
     // tank$$.textContent = equipo.tank;
-    tankRio$$.textContent ="Tank ---> " + equipo.tank;
-    heal$$.textContent = "Heal ---> " + equipo.heal;
-    dps1$$.textContent = "Dps ---> " + equipo.dps1;
-    dps2$$.textContent = "Dps ---> " + equipo.dps2;
-    dps3$$.textContent = "Dps ---> " + equipo.dps3;
+    tankRio$$.textContent = equipo.tank;
+    heal$$.textContent = equipo.heal;
+    dps1$$.textContent = equipo.dps1;
+    dps2$$.textContent = equipo.dps2;
+    dps3$$.textContent = equipo.dps3;
     twitch$$.textContent = "streaming ---> POV " + equipo.twitch;
     // iframe$$.textContent = equipo.iframe;
 
