@@ -47,7 +47,7 @@ const TEAMS = [
     dps2Rio: 'https://raider.io/characters/eu/zuljin/Zukidh',
     dps3: 'Hellsoldier',
     dps3Rio: 'https://raider.io/characters/us/uldum/H%C3%ABllsoldier',
-    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/Nyalich_zy3rgt.png',
+    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/Etryh/Nyalich_zy3rgt.png',
     twitch: 'Alyssïa',
     twitchLink:
     'https://www.twitch.tv/pxdragonair',
@@ -64,7 +64,7 @@ const TEAMS = [
     dps2Rio: 'https://raider.io/characters/eu/dun-modr/Wyp%C3%AB',
     dps3: 'Kröppâ',
     dps3Rio: 'https://raider.io/characters/eu/sanguino/Kr%C3%B6pp%C3%A2',
-    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/sniperofangel-profile_image-b6431933a60e7ee5-70x70_q1ear0.png',
+    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682689023/Etryh/sniperofangel-profile_image-b6431933a60e7ee5-70x70_q1ear0.png',
     twitch: 'Minithanatos',
     twitchLink:
       'https://www.twitch.tv/sniperofangel',
@@ -81,7 +81,7 @@ const TEAMS = [
     dps2Rio: 'https://raider.io/characters/eu/sanguino/Galiozx',
     dps3: 'Perfectenemy',
     dps3Rio: 'https://raider.io/characters/eu/dun-modr/Perfectenemy',
-    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682700341/gines_que_empape_v9rgq2.png',
+    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682700341/Etryh/gines_que_empape_v9rgq2.png',
     twitch: 'Beyaquita',
     twitchLink:
       'https://www.twitch.tv/Herculotex',
@@ -98,7 +98,7 @@ const TEAMS = [
     dps2Rio: 'https://raider.io/characters/eu/sanguino/Seph%C3%ADroth',
     dps3: 'Ktecazo',
     dps3Rio: 'https://raider.io/characters/eu/sanguino/Ktecazo',
-    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682853350/lissmonk_bpclm2.jpg',
+    image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1682853350/Etryh/lissmonk_bpclm2.jpg',
     twitch: 'lissmonk',
     twitchLink:
       'https://www.twitch.tv/lissmonk',
